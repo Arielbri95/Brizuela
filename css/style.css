@@ -27,9 +27,6 @@ header {
   text-transform: uppercase;
   color: white;
 }
-.text_justify {
-  text-align: justify;
-}
 
 .caja-uno {
   text-align: center;
@@ -42,11 +39,6 @@ header {
   padding: 30px;
   margin-top: auto;
   border: 2px solid black;
-}
-
-#barra-nav {
-  display: flex;
-  justify-content: center;
 }
 
 .flex-container {

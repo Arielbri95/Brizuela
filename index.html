@@ -28,57 +28,53 @@
     <title>Reactivos</title>
   </head>
   <body>
-    <header>
+    <header class="container-fluid">
       <h1>Bienvenidos al sitio oficial de Reactivos Del Oeste</h1>
-      <section class="container">
+      <section class="container-fluid">
         <div class="logo">
           <a href="index.html">
-            <img src="imagenes/logo.ico" alt="logo de la banda" />
+            <img
+              src="imagenes/logo.ico"
+              alt="logo de la banda"
+              class="img-fluid"
+            />
           </a>
         </div>
       </section>
 
       <nav class="navbar navbar-expand-lg bg-black navbar-dark">
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <div id="barra-nav" class="container">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" href="index.html">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="Pages/productos.html">Productos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="Pages/musica.html">Música</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="Pages/fechas.html">Fechas</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="Pages/contacto.html">Contacto </a>
-              </li>
-            </ul>
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Inicio</a
+              >
+              <a class="nav-link" href="Pages/productos.html">Productos</a>
+              <a class="nav-link" href="Pages/fechas.html">Fechas</a>
+              <a class="nav-link" href="Pages/musica.html">Música</a>
+              <a class="nav-link" href="Pages/contacto.html">Contacto</a>
+            </div>
           </div>
         </div>
       </nav>
     </header>
-    <main>
+    <main class="container">
       <section class="flex-container">
         <article class="row dif-sect">
           <h2>Nuestra historia:</h2>
 
-          <p class="col-sm-12 col-lg-12 col-xl-12 col-xxl-12 text__justify">
+          <p class="col-sm-12 col-lg-12 col-xl-12 col-xxl-12">
             <br />
             <strong>Reactivos del Oeste</strong> nace en la provincia de
             Mendoza, oriunda del departamento de Maipú en el año 2019 cuando
@@ -114,34 +110,35 @@
         </article>
       </section>
     </main>
-    <section class="int-act">
-      <h2 class="container-h2">Integrantes actuales:</h2>
-      <img
-        src="imagenes/Banda (2).jpg"
-        class="img-fluid"
-        alt="Banda completa"
-      />
-      <div>
-        <p>
-          Ariel Brizuela (Guitarra) - Bruno Porcari (Batería) - Emiliano Jofre
-          (Voz principal y Guitarra) - Franco Osorio (Bajo)
-        </p>
-      </div>
-    </section>
-    <aside>
+    <div class="container">
+      <section class="int-act">
+        <h2 class="container-h2">Integrantes actuales:</h2>
+        <img
+          src="imagenes/Banda (2).jpg"
+          alt="Banda completa"
+          class="img-fluid"
+        />
+        <div class="container text-center m-3">
+          <p>
+            Ariel Brizuela (Guitarra) - Bruno Porcari (Batería) - Emiliano Jofre
+            (Voz principal y Guitarra) - Franco Osorio (Bajo)
+          </p>
+        </div>
+      </section>
+    </div>
+
+    <aside class="container-fluid text-center">
       <h2>Colaborá con nosotros!</h2>
       <!--En esta sección va un boton con un link que dirige al usuario a una cuenta de mercado pago para colaborar con la banda.-->
       <a href="https://link.mercadopago.com.ar/reactivosdeloeste"
         ><img
+          class="img-fluid"
           src="imagenes/mp.png"
-          width
-          100
-          height="100"
           alt="logo de mercado pago"
       /></a>
     </aside>
 
-    <footer class="caja-uno">
+    <footer class="container-fluid caja-uno">
       <h3>¡Seguinos en nuestras redes!</h3>
       <div class="flex-container">
         <a href="https://www.facebook.com/ReactivosDelOeste"
