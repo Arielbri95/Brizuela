@@ -5,10 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="../imagenes/logo.ico" type="image/x-icon" />
-    <script
-      src="https://kit.fontawesome.com/dcad52dbf1.js"
-      crossorigin="anonymous"
-    ></script>
 
     <!-- Link de bootstrap -->
     <link
@@ -17,18 +13,29 @@
       integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
       crossorigin="anonymous"
     />
-
+    <!-- Link de CSS -->
     <link rel="stylesheet" href="../css/style.css" />
+    <!-- Link de fuente -->
+    <script
+      src="https://kit.fontawesome.com/dcad52dbf1.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Reactivos</title>
   </head>
   <body>
-    <header>
+    <header class="container-fluid">
       <h1>Reactivos Del Oeste</h1>
-      <div class="logo">
-        <a href="../index.html">
-          <img src="../imagenes/logo.ico" alt="logo de la banda" />
-        </a>
-      </div>
+      <section class="container-fluid">
+        <div class="logo">
+          <a href="../index.html">
+            <img
+              src="../imagenes/logo.ico"
+              alt="logo de la banda"
+              class="img-fluid"
+            />
+          </a>
+        </div>
+      </section>
 
       <nav class="navbar navbar-expand-lg bg-black navbar-dark">
         <div class="container-fluid">
@@ -58,15 +65,52 @@
       </nav>
     </header>
 
-    <h2>Fechas</h2>
-    <h3>Enterate de nuestras proximas fechas:</h3>
-    <img src="../imagenes/flyer1.jpg" alt="Flyer de la banda" />
-    <img src="../imagenes/flyer2.jpg" alt="Flyer de la banda" />
-    <img src="../imagenes/flyer3.jpg" alt="Flyer de la banda" />
-    <img src="../imagenes/flyer4.jpg" alt="Flyer de la banda" />
-    <footer>
+    <h2 class="container text-center p-3">Fechas</h2>
+    <h3 class="container text-center p-3">
+      Enterate de nuestras proximas fechas:
+    </h3>
+
+    <div
+      id="carouselExampleInterval"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="2000">
+          <img src="../imagenes/flyer1.jpg" class="d-block w-40" alt="Flyer1" />
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="../imagenes/flyer2.jpg" class="d-block w-40" alt="Flyer2" />
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="../imagenes/flyer3.jpg" class="d-block w-40" alt="flyer3" />
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="../imagenes/flyer4.jpg" class="d-block w-40" alt="flyer4" />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleInterval"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleInterval"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <footer class="container-fluid caja-uno">
       <h3>Seguinos en nuestras redes!</h3>
-      <div>
+      <div class="flex-container">
         <a href="https://www.facebook.com/ReactivosDelOeste"
           ><i class="fa-brands fa-facebook"></i
         ></a>
@@ -75,7 +119,7 @@
         ></a>
       </div>
 
-      <p>Copyright Reactivos del Oeste - Todos los derechos reservados ©</p>
+      <p>Copyright Reactivos del Oeste <br />Todos los derechos reservados ©</p>
     </footer>
     <!-- Script de Bootstrap -->
     <script
