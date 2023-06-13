@@ -23,14 +23,19 @@
     <title>Reactivos</title>
   </head>
   <body>
-    <header>
+    <header class="container-fluid">
       <h1>Reactivos Del Oeste</h1>
-      <div class="logo">
-        <a href="../index.html">
-          <img src="../imagenes/logo.ico" alt="logo de la banda" />
-        </a>
-      </div>
-
+      <section class="container-fluid">
+        <div class="logo">
+          <a href="../index.html">
+            <img
+              src="../imagenes/logo.ico"
+              alt="logo de la banda"
+              class="img-fluid"
+            />
+          </a>
+        </div>
+      </section>
       <nav
         class="navbar navbar-expand-lg bg-black navbar-dark flex align-items-center"
       >
@@ -60,19 +65,23 @@
         </div>
       </nav>
     </header>
+    <div class="container text-center p-3">
+      <h2>Contactate con nosotros</h2>
+    </div>
 
-    <h2>Contactate con nosotros</h2>
-    <form>
-      <label for="nombre_apellido">Nombre:</label>
-      <input type="text" name="nombre" placeholder="Nombre" /><br />
-      <label for="email">Email:</label>
-      <input type="email" name="email" placeholder="nombre@gmail.com" /><br />
-      <textarea cols="30" rows="10" placeholder="Mensaje"></textarea>
-      <div>Recibir novedades de Reactivos</div>
-      <input type="checkbox" name="acepta" value="1" />
-      <input type="submit" value="Enviar" />
-      <input type="reset" value="Limpiar" />
-    </form>
+    <div class="container text-center p-3">
+      <form>
+        <label for="nombre_apellido">Nombre:</label>
+        <input type="text" name="nombre" placeholder="Nombre" /><br />
+        <label for="email">Email:</label>
+        <input type="email" name="email" placeholder="nombre@gmail.com" /><br />
+        <textarea cols="30" rows="10" placeholder="Mensaje"></textarea>
+        <div>Recibir novedades de Reactivos</div>
+        <input type="checkbox" name="acepta" value="1" />
+        <input type="submit" value="Enviar" />
+        <input type="reset" value="Limpiar" />
+      </form>
+    </div>
 
     <footer class="container-fluid caja-uno">
       <h3>Seguinos en nuestras redes!</h3>
