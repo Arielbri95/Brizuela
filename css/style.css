@@ -31,7 +31,10 @@ header {
 .dif-sect {
   padding: 30px;
   margin-top: auto;
-  border: 2px solid black;
+  border: 2px solid;
+}
+.dif-sect:hover {
+  color: black;
 }
 
 .flex-container {
@@ -42,6 +45,12 @@ header {
 .logo {
   display: flex;
   justify-content: center;
+  transition: all;
+}
+
+.logo :hover {
+  height: 300px;
+  width: 300px;
 }
 
 .int-act {
@@ -49,6 +58,11 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: none;
+}
+
+.int-act :hover {
+  background-color: #eeee14;
 }
 
 .container-h2 {

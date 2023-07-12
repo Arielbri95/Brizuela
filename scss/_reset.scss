@@ -4,3 +4,8 @@
 }
 
 $color-yellow: #eeee14;
+
+@mixin flex-container {
+  display: flex;
+  justify-content: space-evenly;
+}
